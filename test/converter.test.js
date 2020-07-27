@@ -248,6 +248,7 @@ describe('Converter', () => {
       assert.equal(Converter.value('6億400万2千5になります。'), '604002005になります。');
       assert.equal(Converter.value('万千百十'), '11110');
       assert.equal(Converter.value('１つの価格が二兆30万五千十7円になります。'), '1つの価格が2000000305017円になります。');
+      assert.equal(Converter.value('16兆８千億ドル'), '16800000000000ドル');
     });
   });
 });
