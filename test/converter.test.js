@@ -7,6 +7,7 @@ describe('Converter', () => {
     it('should return an empty array', () => {
       assert.deepEqual(Converter.values(''), []);
       assert.deepEqual(Converter.values('こんにちは'), []);
+      assert.deepEqual(Converter.values(true), []);
     });
 
     it('should return the corresponding int value', () => {
@@ -225,6 +226,7 @@ describe('Converter', () => {
     it('should return an input string', () => {
       assert.deepEqual(Converter.value(''), '');
       assert.deepEqual(Converter.value('こんにちは'), 'こんにちは');
+      assert.deepEqual(Converter.value(true), true);
     });
 
     it('should return the corresponding string from the input numeric string.', () => {

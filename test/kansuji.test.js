@@ -20,6 +20,7 @@ describe('Kansuji', () => {
       assert.equal(Kansuji.value(20010300), '二千一万三百');
       assert.equal(Kansuji.value(2000000607), '二十億六百七');
       assert.equal(Kansuji.value(32.001), '三十二');
+      assert.equal(Kansuji.value(100000000000000000000, true), '一万京');
     });
 
     it('should return the corresponding minus kansuji string', () => {
