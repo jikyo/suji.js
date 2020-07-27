@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "suji is a converter library from Japanese number notation to numerical value, and from numerical notation to Japanese Kansuji notation.",
   "main": "index.js",
+  "browser": "dist/suji.js",
   "scripts": {
-    "test": "mocha",
-    "lint": "eslint --fix index.js lib/ test/"
+    "lint": "eslint --cache --ext js index.js lib/ test/",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,12 +29,15 @@
   "homepage": "https://github.com/jikyo/suji.js#readme",
   "dependencies": {},
   "devDependencies": {
-    "ajv": "^5.0.0",
-    "ajv-keywords": "^2.1.1",
-    "eslint": "^6.5.1",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "mocha": "^6.2.1",
-    "rewire": "^4.0.1"
+    "eslint-plugin-jest": "^23.8.1",
+    "jest": "^26.1.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "jest": {
+    "verbose": true
   }
 }
