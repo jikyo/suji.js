@@ -1,6 +1,6 @@
 {
   "name": "@jikyo/suji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "suji is a converter library from Japanese number notation to numerical value, and from numerical notation to Japanese Kansuji notation.",
   "main": "index.js",
   "browser": "dist/suji.js",
